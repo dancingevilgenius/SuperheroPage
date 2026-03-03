@@ -6,7 +6,7 @@ function App() {
   return (
     <ListGroup
       items={["Superman", "Batman", "Wonderwoman", "Green Lantern"]}
-      heading={"Heroes"}
+      heading={"Heroes (React/Docker/Devploy>"}
       onSelectItem={function (item: string): void {
         throw new Error("Function not implemented.");
       }}
