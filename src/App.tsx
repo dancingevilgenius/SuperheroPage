@@ -1,17 +1,14 @@
-import ListGroup from "./components/ListGroup/ListGroup";
-import UserList from "./components/UserList";
-
+import "./App.css";
+import ContestantList from "./components/ContestantList";
+import ContestantNavbar from "./components/ContestantNavbar";
 function App() {
-  //return <UserList />;
   return (
-    <ListGroup
-      items={["Superman", "Batman", "Wonderwoman", "Green Lantern"]}
-      heading={"Heroes"}
-      onSelectItem={function (item: string): void {
-        throw new Error("Function not implemented.");
-      }}
-    />
+    <>
+      <div>
+        <ContestantNavbar />
+      </div>
+      <ContestantList />
+    </>
   );
 }
-
 export default App;
