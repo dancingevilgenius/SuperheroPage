@@ -8,7 +8,7 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 import { ArrowRight, InfoSquareFill } from "react-bootstrap-icons";
 
 function ContestantNavBar() {
-  const [show, setShow] = useState(false);
+  const [show, setShow] = useState(true);
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
@@ -79,16 +79,24 @@ function ContestantNavBar() {
       </Navbar>
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
-          <Modal.Title>Contest Details</Modal.Title>
+          <Modal.Title bg="dark">
+            <InfoSquareFill color="black" size="20px" /> Contest Details
+          </Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <span style={{ fontWeight: "bold" }}>Logged In As:</span> Billy
-          Shavers <br />
+          <span style={{ fontWeight: "bold" }}>Logged In As:</span> Billy Ray
+          Shaver <br />
           <span style={{ fontWeight: "bold" }}>Contest:</span> Novice Country
           Swing <br />
           <span style={{ fontWeight: "bold" }}>Event:</span> Chicago Classic
           2026 <br />
-          <span style={{ fontWeight: "bold" }}>Instructions:</span> Give each contestant a raw score out of 100.00. The rank will be automatically calculated based on the raw score. The contestant with the highest raw score will be ranked 1. When you are finished click, from the "Action" dropdown select "Submit Scores". Various ways of sorting can be done from the "Action" dropdown.  <br />
+          <span style={{ fontWeight: "bold" }}>Instructions:</span> Give each
+          contestant a raw score out of 100.00. The rank will be automatically
+          calculated based on the raw score. The contestant with the highest raw
+          score will be ranked 1. When you are finished, click on the "Action"
+          dropdown and select "Submit Scores". Various ways of sorting can be
+          done from the "Action" dropdown. Reopen this dialog by clicking on
+          this icon:
         </Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={handleClose}>
