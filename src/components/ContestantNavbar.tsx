@@ -93,7 +93,7 @@ function ContestantNavBar() {
           <span style={{ fontWeight: "bold" }}>Instructions:</span> Give each
           contestant a raw score from 00.1 to 99.9. The rank will be
           automatically calculated. The contestant with the highest raw score
-          will be ranked #1. When you are finished, click on the "Action"
+          will be ranked #1. When you are finished, click on the "Actions"
           dropdown and select "Submit Scores". Various ways of sorting can be
           done from the "Action" dropdown. Reopen this dialog by clicking on
           this icon <InfoSquareFill color="black" size="20px" />
