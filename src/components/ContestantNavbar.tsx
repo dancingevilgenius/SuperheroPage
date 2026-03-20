@@ -17,8 +17,6 @@ function ContestantNavBar() {
     <>
       <Navbar expand="lg" bg="dark" data-bs-theme="dark">
         <Container>
-          <Navbar.Brand href="#home">Nov Co</Navbar.Brand>
-
           <NavDropdown
             title="Actions"
             id="nav-dropdown"
@@ -79,6 +77,32 @@ function ContestantNavBar() {
           </Navbar.Collapse>
         </Container>
       </Navbar>
+      <Modal show={show} onHide={handleClose}>
+        <Modal.Header closeButton>
+          <Modal.Title>Contest Details</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <span style={{ fontWeight: "bold" }}>Logged In As:</span> Billy
+          Shavers <br />
+          <span style={{ fontWeight: "bold" }}>Contest:</span> Novice Country
+          Swing <br />
+          <span style={{ fontWeight: "bold" }}>Event:</span> Chicago Classic
+          2026 <br />
+          <span style={{ fontWeight: "bold" }}>Instructions:</span> Give each contestant a raw score out of 100.00. The rank will be automatically calculated based on the raw score. The contestant with the highest raw score will be ranked 1. When you are finished click, from the "Action" dropdown select "Submit Scores". Various ways of sorting can be done from the "Action" dropdown.  <br />
+        </Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={handleClose}>
+            Close
+          </Button>
+          <Button
+            variant="primary"
+            onClick={handleClose}
+            style={{ visibility: "hidden" }}
+          >
+            Save Changes
+          </Button>
+        </Modal.Footer>
+      </Modal>
     </>
   );
 }
