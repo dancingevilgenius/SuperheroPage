@@ -3,12 +3,13 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
+import { ArrowRight, InfoSquareFill } from "react-bootstrap-icons";
 
 function ContestantNavBar() {
   return (
     <Navbar expand="lg" bg="dark" data-bs-theme="dark">
       <Container>
-        <Navbar.Brand href="#home">Nov Country Swing</Navbar.Brand>
+        {/* <Navbar.Brand href="#home">Nov Country Swing</Navbar.Brand> */}
 
         <NavDropdown
           title="Actions"
@@ -31,17 +32,33 @@ function ContestantNavBar() {
         </NavDropdown>
 
         {/* <Button variant="outline-light">Submit </Button> */}
+
+        <InfoSquareFill
+          color="white"
+          size="20px"
+          style={{ marginLeft: "10px" }}
+        ></InfoSquareFill>
+
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav" style={{ margin: "10px auto" }}>
           <Nav className="me-auto">
             <Button
               variant="outline-light"
-              style={{ width: "100px", alignSelf: "center" }}
+              style={{
+                width: "100px",
+                alignSelf: "center",
+                marginLeft: "10px",
+              }}
             >
               Logout
             </Button>
 
-            <Nav.Link href="#link">Link</Nav.Link>
+            <Nav.Link
+              href="#link"
+              style={{ alignSelf: "center", marginLeft: "10px" }}
+            >
+              About
+            </Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
