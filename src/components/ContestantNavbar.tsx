@@ -5,7 +5,7 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
-import { ArrowRight, InfoSquareFill } from "react-bootstrap-icons";
+import { InfoSquareFill } from "react-bootstrap-icons";
 
 function ContestantNavBar() {
   const [show, setShow] = useState(true);
@@ -94,9 +94,9 @@ function ContestantNavBar() {
           contestant a raw score from 00.1 to 99.9. The rank will be
           automatically calculated. The contestant with the highest raw score
           will be ranked #1. When you are finished, click on the "Actions"
-          dropdown and select "Submit Scores". Sorting can be
-          done from the "Action" dropdown. Reopen this dialog by clicking on
-          this icon <InfoSquareFill color="black" size="20px" />
+          dropdown and select "Submit Scores". Sorting can be done from the
+          "Action" dropdown. Reopen this dialog by clicking on this icon{" "}
+          <InfoSquareFill color="black" size="20px" />
         </Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={handleClose}>
