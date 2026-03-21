@@ -79,7 +79,7 @@ function ContestantNavBar() {
       </Navbar>
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
-          <Modal.Title bg="dark">
+          <Modal.Title>
             <InfoSquareFill color="black" size="20px" /> Contest Details
           </Modal.Title>
         </Modal.Header>
